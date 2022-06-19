@@ -16,7 +16,7 @@ body{
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-columns: minmax(120px, auto) repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button {
@@ -31,8 +31,11 @@ body{
     background-color: rgba(255, 255, 255, .9);
 } 
 
-.span-two{ 
-    grid-column: span 2;
+.mainHeader{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .output{
@@ -56,3 +59,8 @@ body{
     color: white;
     font-size: 2.5rem;
 }
+
+.span-two{ 
+    grid-column: span 2;
+}
+

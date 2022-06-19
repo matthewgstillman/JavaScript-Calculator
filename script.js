@@ -1,6 +1,6 @@
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
-    this.prrviousOperandTextElement = previousOperandTextElement;
+    this.previousOperandTextElement = previousOperandTextElement;
     this.currentOperandTextElement = currentOperandTextElement;
     this.clear();
   }
@@ -53,13 +53,13 @@ class Calculator {
     }
     this.currentOperand = computation;
     this.operation = undefined;
-    this.previousOperand = " ";
+    this.previousOperand = "";
   }
 
   getDisplayNumber(number) {
     const stringNumber = number.toString();
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
-    const decimalDigits = parseFloat(stringNumber.split(".")[1]);
+    const decimalDigits = stringNumber.split(".")[1];
     let integerDisplay;
     if (isNaN(integerDigits)) {
       integerDisplay = "";
